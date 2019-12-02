@@ -10,8 +10,10 @@ Więcej na ten temat: https://cssreset.com/what-is-a-css-reset/
 
 * {
     box-sizing: border-box;
-    background-color: #25072E;
+    background: url(images/background.svg);
+    background-attachment: fixed;
 }
+
 
 body {
     margin: 0;
@@ -66,10 +68,6 @@ a:hover {text-decoration: none}
  opacity: 100%;
 }
 
-
-.content-section {
-    background-color: #25072E;
-}
 
 /*.content-section:nth-child(odd) {
     background-color: #25072E;
@@ -193,11 +191,19 @@ img {
 
 .concerts__info {
     display: flex;
-/*   flex-direction: row; */
-  flex-direction: column;
-    
+    flex-direction: row;
+    /*flex-direction: column;*/
+    position: relative;
+    left: 50%;
     grid-template-columns: repeat(10, 1fr);
     width: 300px;
+}
+
+
+.concert__info_text {
+    flex-direction: column;
+    grid-template-columns: repeat(10, 1fr);
+    margin-right: 30px;
 }
 
 .concerts__date {
@@ -307,6 +313,17 @@ address{
     height: 30px;
 }
 
+.button:hover {
+    color: azure;
+    opacity: 0.7;    
+
+}
+
+.button:active {
+    color: azure;
+    background-color: rgba(63, 61, 75, 0.685);    
+
+}
 
 
 
