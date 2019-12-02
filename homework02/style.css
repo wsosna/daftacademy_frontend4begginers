@@ -447,12 +447,8 @@ SEKCJA "CONTACT"
         width: 100%;
         display: flex;
         flex-direction: column;
-        position: center;
     }
 
-    header {
-        position: center;
-    }
 
     .page-brand {
         width: 50%;
